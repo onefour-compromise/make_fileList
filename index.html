@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ファイルリスト作成ツール</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="fileListParent">
+  <section>
+    <h1>ファイルリスト作成ツール</h1>
+    <ol class="list-type_none">
+      <li>
+        <h2 class="heading">step1:以下のテキストエリアに、ファイルを格納するディレクトリのパスを記述して下さい。</h2>
+        <textarea class="txtArea" id="myTextarea"></textarea>
+      </li>
+      <li>
+        <h2 class="heading">step2:「ファイルを選択」ボタンから任意のファイルを選択し、OKを押してください。</h2>
+        <div><input class="btn" type="file" multiple="" id="file"></div>
+        <div>
+          <p id="messageH2">ここにファイルのリストが作成されます。</p>
+          <p id="fileList"></p>
+        </div>
+      </li>
+    </ol>
+  </section>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
